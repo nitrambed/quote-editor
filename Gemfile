@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.2"
 
 gem "simple_form", "~> 5.1.0"
+gem "devise", "~> 4.8.1"
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -34,7 +35,7 @@ gem "cssbundling-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -76,3 +77,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+
+gem "redis-namespace", "~> 1.8"
+gem "redis-rails", "~> 5.0"
